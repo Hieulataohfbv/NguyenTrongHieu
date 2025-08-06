@@ -1,0 +1,271 @@
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #ffc107;
+  color: rgb(221, 183, 183);
+  padding: 0%;
+  text-align: center;
+}
+nav {
+  display: flex;
+}
+nav a {
+  margin: 0 10px;
+  color: rgb(111, 45, 45);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.banner {
+  background-color: #ffc107;
+  padding: 60px;
+  text-align: center;
+  color: black;
+}
+
+.banner button {
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+footer {
+  background-color: #323030;
+  color: rgb(253, 253, 253);
+  text-align: left;
+  padding: 10px;
+  margin-top: 20px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.search-box {
+  width: 100%;
+  font-size: 14px;
+  padding: 8px 12px 8px 35px; /* chừa chỗ bên trái cho icon */
+    border-radius: 9px;
+
+
+}
+.search-bar button {
+  padding: 5px 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-left: 5px;
+  
+}
+.search-bar input {
+  padding: 10px;
+  font-size: 24px;
+}
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+.header-container {
+  display: flex;
+  align-items: center; /* Canh dọc giữa */
+}
+.search-icon {
+  font-size: 40px; /* Tăng size ở đây */
+}
+.header-buttons {
+  display: flex;
+  gap: 40px; /*khoảng cách các ô button*/
+}
+.header-buttons button {
+  padding: 15px 12px;
+  background-color: #fff;
+  border: 1px solid #888;
+  border-radius: 9px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.button {
+   background-color: #ffc107;
+  color: black; /*màu chữ*/
+  padding: 10px 16px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+/* Khi di chuột vào nút */
+button:hover {
+  background-color: #d7802e; /* màu khi hover */
+  color: white;              /* chữ đổi sang trắng */
+}
+.sanpham {
+  display: flex;
+  justify-content: center;     /* Căn giữa các sản phẩm theo chiều ngang */
+  flex-wrap: wrap;             /* Tự động xuống dòng khi không đủ chỗ */
+  gap: 20px;                   /* Khoảng cách giữa các sản phẩm */
+  padding: 20px;
+}
+
+
+
+.product {
+  width: 200px;                /* Cố định chiều rộng mỗi sản phẩm */
+  border: 1px solid #e63f3f;
+  padding: 10px;
+  text-align: center;
+  background-color: #f2eeee;
+  box-shadow: 2px 2px 10px #ed1313; /*viền ngoài ô*/
+}
+.product img {
+  width: 100%;
+}
+
+.product button {
+  background-color: rgb(241, 187, 25);
+  color: rgb(231, 226, 226);
+  border: none;
+  padding: 8px 12px;
+  margin-top: 10px;
+  cursor: pointer;/*làm con trỏ chuột thành hình bàn tay*/
+}
+.product:hover {
+  background-color: #d7802e;
+  color: #f1ebeb;
+}
+.product button:hover { /*đổi màu bg-chữ khi di chuột vào*/
+  background-color: #1f5bc3;
+  color: #090202;
+}
+.giamgia{
+   text-decoration: line-through; /*gạch ngang chữ*/
+  color: rgb(230, 58, 58);
+}
+.giam20{
+  font-weight: bold;
+}
+.product {
+  margin: 10px;
+  padding: 15px;
+  text-align: center;
+  width: 200px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.product:hover { /*hiệu ứng*/
+  transform: translateY(-30px); /* Nảy lên 30px */
+  box-shadow: 4px 4px 20px #bc3131; /* Tăng độ đổ bóng */
+  transform: translateY(-10px) scale(1.03); /*hiệu ứng cho mềm mại*/
+}
+.cuoi {
+  display: flex; /*giúp các phần tử nằm trên cùng một hàng.*/
+  align-items: center; /* căn giữa theo chiều dọc */
+  gap: 1px;            /* tạo khoảng cách giữa icon và chữ */
+}
+
+.hinh {
+  width: 30px;
+  height: 20px;
+}
+/*---------------------------------------------- about*/
+.hangngang {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.hinhtrai, .hinhphai {
+  width: 350px; /* chỉnh kích thước ảnh theo nhu cầu */
+  height: auto;
+}
+
+.vanban {
+  flex: 1; /* phần giữa chiếm phần còn lại */
+  text-align: left;
+  padding: 0 20px;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0 auto;
+  text-rendering: auto;
+}
+
+
+.backgroud {
+  background-color: #f6dbaf;
+}
+
+/*menu điện thoại*/
+
+
+.dropdown {
+  position: relative;/*Điều này đảm bảo menu xổ xuống nằm ngay dưới nút thay vì sai vị trí.*/
+  display: inline-block;/* Nhờ đó, nút "Sản phẩm" có thể hiển thị 
+  trên một dòng cùng với các nút khác, nhưng vẫn có thể chứa menu con xổ xuống bên trong.*/
+}
+
+
+
+.dropdown-content {
+  display: none;/*Ẩn phần tử ban đầu — menu con sẽ không hiển thị cho đến khi người dùng di
+   chuột vào hoặc tác động JavaScript để hiển thị nó.*/
+  position: absolute;/* Điều này cho phép menu xổ xuống nằm đúng dưới nút mẹ.*/
+  background-color: rgb(249, 248, 248);
+  min-width: 160px;/*Nếu nội dung ít, nó vẫn giữ
+   độ rộng đó; nếu nội dung dài hơn, thì chiều rộng có thể mở rộng thêm.*/
+  box-shadow: 0 4px 8px rgba(67, 17, 17, 4.1);
+  /*Tạo đổ bóng giúp menu có chiều sâu, dễ nhìn hơn:*/
+  z-index: 1;
+  /*Xác định thứ tự chồng lớp – z-index
+   cao hơn sẽ hiển thị trên cùng nếu bị chồng lên bởi các phần tử khác.*/
+}
+
+.dropdown-content a {
+  color: rgb(10, 5, 5);
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #e98a3c;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content{
+  text-align: left;
+  font-weight: bold;
+}
+/*lên trang đầu của phần footer*/
+.back-to-top {
+  display: inline-block;             /* Hiển thị dạng khối nội tuyến */
+  padding: 6px 12px;                 /* Khoảng cách giữa viền và chữ (trên/dưới: 6px, trái/phải: 12px) */
+  font-size: 14px;                   /* Cỡ chữ */
+  background-color: rgb(243, 171, 36);         /* Màu nền */
+  color: white;                      /* Màu chữ */
+  text-decoration: none;            /* Bỏ gạch chân liên kết */
+  border-radius: 10px 0 0 10px;      /* Bo tròn góc trên trái và dưới trái */
+  font-weight: bold;                /* Chữ đậm */
+  transition: background-color 0.3s;/* Làm mượt hiệu ứng đổi màu khi hover */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Đổ bóng cho nút */
+  position: fixed;                  /* Cố định vị trí trên màn hình khi cuộn */
+  right: 0;                         /* Cách mép phải màn hình 0px */
+  bottom: 40px;                     /* Cách mép dưới màn hình 40px */
+  z-index: 1000;                    /* Đảm bảo hiển thị trên các phần tử khác */
+  width: auto;                      /* Chiều ngang co lại theo nội dung */
+  white-space: nowrap;             /* Không cho xuống dòng trong nút */
+}
+
+.back-to-top:hover {
+  background-color: darkorange;
+}
